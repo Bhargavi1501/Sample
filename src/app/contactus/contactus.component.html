@@ -1,0 +1,25 @@
+ <h1 class="text-center text-info">List of ID's</h1>
+
+<input type="text" name="search" id="search" placeholder="Search by title" class="form-control" [(ngModel)] ="searchTerm">
+
+<table class="table table-bordered text-center">
+    <thead>
+        <th>UserID</th>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Body</th>
+    </thead>
+    <tr *ngFor = "let obj of idArray | paginate:{ itemsPerPage:4, currentPage:p}">
+        <td>{{obj.userId}}</td>
+        <td><a routerLink="" (click)=gotoDetails(obj)>{{obj.id}}</a></td>
+        <td>{{obj.title}}</td>
+        <td>{{obj.body}}</td>
+    </tr>
+    <pagination-controls (pageChange)="p=$event" ></pagination-controls>
+</table>
+
+<!--<ul class="list-unstyled text-center">
+    <li *ngFor = "let obj of idArray">
+        <a routerLink="" (click) = "gotoDetails(obj)">{{obj.id}}</a>
+    </li>
+</ul>-->

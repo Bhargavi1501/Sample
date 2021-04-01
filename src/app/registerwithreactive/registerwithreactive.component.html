@@ -1,0 +1,66 @@
+<div class="container">
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <!-- username -->
+        <div class="form-floating pb-3">
+            <input type="text" name="username" id="" class="form-control" placeholder="username"
+                formControlName="username" autocomplete="off">
+            <label for="" class="form-label">Username</label>
+            <p *ngIf="registerForm.get('username').hasError('required') && registerForm.get('username').touched">This
+                field is required</p>
+        </div>
+        <!-- email -->
+        <div class="form-floating pb-3">
+        <input type="email" name="email" id="" class="form-control" placeholder="name@mail.com" formControlName="email"
+            autocomplete="off">
+            <label for="" class="form-label">Email</label>
+            <p *ngIf="registerForm.get('email').hasError('required') && registerForm.get('email').touched">This field is required</p>
+        </div>
+            <!-- Name -->
+            <div class="form-floating pb-3">
+        <input type="text" name="name" id="" class="form-control" placeholder="yourname" formControlName="name"
+            autocomplete="off">
+            <label for="" class="form-label">Name</label>
+            </div>
+            <!-- gender radio -->
+            <div class="form-group pb-3">
+                <label for="" class="form-label">Gender</label>
+                <div class="form-check">
+                    <input type="radio" name="gender" id="m" class="form-check-input" value="male" formControlName="gender">
+                    <label class="form-check-label" for="m">Male</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="gender" id="f" class="form-check-input" value="female" formControlName="gender">
+                    <label class="form-check-label" for="f">Female</label>
+                </div>
+            </div>
+            <!-- checkbox -->
+            <div class="form-group pb-3">
+                <label for="" class="form-label">Skills</label>
+                <div class="form-check">
+                    <input type="checkbox" name="skills" id="Angular" class="form-check-input" value="Angular" formControlName="skills">
+                    <label class="form-check-label" for="Angular">Angular</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" name="skills" id="react" class="form-check-input" value="React" formControlName="skills">
+                    <label class="form-check-label" for="react">React</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" name="skills" id="bootstrap" class="form-check-input" value="Bootstrap" formControlName="skills">
+                    <label class="form-check-label" for="bootstrap">Bootstrap</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" name="skills" id="js" class="form-check-input"value="JavaScript" formControlName="skills">
+                    <label class="form-check-label" for="js">JavaScript</label>
+                </div>
+            </div>
+            <!-- TextArea -->
+            <div class="form-floating pb-3">
+                <textarea name="ay" class="form-control" id="ay" placeholder="About yourself" formControlName="aboutyourself" style="height: 100px;"></textarea>
+                <label for="ay" class="form-label">About Yourself</label>
+            </div>
+        <!-- submit -->
+        <div class="pt-3">
+        <button class="btn btn-success" type="submit" [disabled]="registerForm.invalid" >Register</button>
+    </div>
+    </form>
+</div>

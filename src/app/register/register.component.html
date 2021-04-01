@@ -1,0 +1,130 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-md-6 mx-auto">
+        <form class="form" #registerForm="ngForm" (ngSubmit)="registerForm.form.valid && onSubmit()">
+          <div class="form-group">
+            <label for="n">Name</label>
+            <input type="text" name="name" id="n" class="form-control" [(ngModel)]="userModal.name" required
+              #name="ngModel" autocomplete="off">
+
+            <span class="text-danger" *ngIf="(name.touched || registerForm.submitted) && name.errors?.required">
+              Name is required
+            </span> -->
+            <!-- <p *ngIf="ref1.errors?.pattern">Pattern not matched</p> -->
+
+            <!-- <p *ngIf="ref1.touched&&ref1.invalid" class="alert alert-danger">Username is required</p> -->
+
+            <!-- <p *ngIf="ref1.invalid&&ref1.dirty">Length should be four</p> -->
+
+            <!-- <div *ngIf="ref1.invalid && (ref1.dirty || ref1.touched)" class="alert alert-danger">
+              <div *ngIf="ref1.errors?.required">
+                Name is required
+              </div>
+              <div *ngIf="ref1.errors?.minlength">
+                Name must be atleast 4 characters long
+              </div>
+            </div> -->
+          <!-- </div>
+          <div class="form-group">
+            <label for="em">Email</label>
+            <input type="text" name="email" id="em" class="form-control" [(ngModel)]="userModal.email" required
+              #email="ngModel" autocomplete="off" email>
+
+            <span class="text-danger" *ngIf="(email.touched || registerForm.submitted) && email.errors?.required">
+              Email is required
+            </span>
+          </div>
+          <div class="form-group">
+            <label for="un">Username</label>
+            <input type="text" name="username" id="un" class="form-control" [(ngModel)]="userModal.username" required
+              #username="ngModel" autocomplete="off" username>
+
+            <span class="text-danger" *ngIf="(username.touched || registerForm.submitted) && username.errors?.required">
+              Username is required
+            </span>
+          </div>
+          <div class="form-group">
+            <label for="pw">Password</label>
+            <input type="password" name="password" id="pw" class="form-control" [(ngModel)]="userModal.password"
+              #password="ngModel" appPasswordPattern required>
+
+            <span class="text-danger" *ngIf="(password.touched || registerForm.submitted) && password.errors?.required">
+              Password is required
+            </span>
+            <span class="text-danger" *ngIf="password.touched && password.errors?.invalidPassword">
+              Password should have minimum 8 characters, at least 1 uppercase letter, 1 lowercase
+              letter and 1 number
+            </span>
+          </div> -->
+          <!-- rd" name="password"
+                                  #password="ngModel" appPasswordPattern required>
+                              <span class="text-danger"
+                                  *ngIf="(password.touched || registerForm.submitted) && password.errors?.required">
+                                  Password is required
+                              </span>
+                              <span class="text-danger" *ngIf="password.touched && password.errors?.invalidPassword">
+                                  Password should have minimum 8 characters, at least 1 uppercase letter, 1 lowercase
+                                  letter and 1 number
+                              </span>
+                          </div>
+                         
+                          <div class="form-group">
+                              <button type="submit" class="btn btn-success">Register</button>
+                          </div>
+                      </form>
+          </div>
+      </div>
+  </div> -->
+          <!-- submit -->
+          <!-- <div class="pt-3 text-center">
+            <button class="btn btn-success" type="submit">Register</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="p-3">
+    <table class="table table-bordered text-center">
+      <thead>
+        <th>Name</th>
+        <th>Email</th>
+        <th>username</th>
+        <th>Password</th>
+      </thead>
+      <tr *ngFor="let obj of users;let ind = index">
+        <td>{{obj.name}}</td>
+        <td>{{obj.email}}</td>
+        <td>{{obj.username}}</td>
+        <td>{{obj.password}}</td>
+        <td><button class="btn" style="background-color: red;color: whitesmoke;" (click)="delete(ind)">X</button></td>
+        <td ><button class="btn" style="background-color: skyblue;" (click)="edit()"><i class="fa fa-edit" ></i></button></td>
+        <span *ngIf="changeStatus">
+          <input type="text" name="username" id="un" placeholder="edit username...">
+          
+        </span>
+      </tr>
+    </table>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+    crossorigin="anonymous"></script>
+</body>
+
+</html> --> -->
